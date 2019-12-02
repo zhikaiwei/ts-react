@@ -4,7 +4,7 @@ import { Dispatch } from "redux";
 import { ReducerKey } from "../../enums/reducerKey";
 import { injectReducer } from "../../common/store";
 import { reducer, State } from "./store/reducer";
-// import Test from "./test";
+import Test from "./Test";
 
 injectReducer(ReducerKey.About, reducer);
 
@@ -33,7 +33,7 @@ class About extends React.Component<AboutProps, AboutState> {
     return (
       <div>
         count={this.props.count}
-        {/* <Test /> */}
+        <Test />
       </div>
     );
   }

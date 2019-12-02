@@ -4,7 +4,7 @@ import { Dispatch } from "redux";
 import { ReducerKey } from "../../enums/reducerKey";
 import { injectReducer } from "../../common/store";
 import { reducer, State } from "./store/reducer";
-import Test from "./Test";
+import Test from "./test";
 
 injectReducer(ReducerKey.About, reducer);
 

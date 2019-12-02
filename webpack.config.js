@@ -96,13 +96,7 @@ const config = {
   },
   resolve: {
     modules: ["node_modules", path.resolve(__dirname, "src")],
-    extensions: [".js", ".ts", ".tsx", ".less", ".scss", ".png"],
-    alias: {
-      "@": path.resolve("./src"),
-      "@ant-design/icons/lib/dist$": path.resolve("./src/icons.ts"),
-      "@components": path.resolve("./src/components"),
-      "@img": path.resolve("./src/assets/img")
-    }
+    extensions: [".js", ".ts", ".tsx", ".less", ".scss", ".png"]
   },
   devServer: {
     contentBase: path.resolve(__dirname, "src"),

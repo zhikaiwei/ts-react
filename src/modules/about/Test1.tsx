@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Button } from "antd";
 import { connect } from "react-redux";
 import { Dispatch } from "redux";
 import { ReducerKey } from "../../enums/reducerKey";
@@ -47,7 +46,7 @@ class Test extends React.Component<TestProps, TestState> {
           });
         }}
       >
-        <Button type="primary">增加count</Button>
+        {/* <Button type="primary">增加count</Button> */}
       </div>
     );
   }

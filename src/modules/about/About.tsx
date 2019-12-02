@@ -4,7 +4,7 @@ import { Dispatch } from "redux";
 import { ReducerKey } from "../../enums/reducerKey";
 import { injectReducer } from "../../common/store";
 import { reducer, State } from "./store/reducer";
-import Test from "./test";
+import Test from "./Test1";
 
 injectReducer(ReducerKey.About, reducer);
 
@@ -29,7 +29,7 @@ const mapDispatchToProps = (dispatch: Dispatch): DispatchToProps => {
 };
 
 class About extends React.Component<AboutProps, AboutState> {
-  render() {
+  public render() {
     return (
       <div>
         count={this.props.count}

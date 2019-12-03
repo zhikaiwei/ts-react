@@ -2,6 +2,7 @@
  * reducer key
  */
 export enum ReducerKey {
-  Router = "router"
-  About = 'about'
+  App = "app",
+  Router = "router",
+  About = "about"
 }

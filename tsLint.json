@@ -1,7 +1,8 @@
 {
+  "defaultSeverity": "error",
   "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "jsRules": {},
   "rules": {
-    "arrow-parens": false,
     "interface-name": false,
     "no-console": false,
     "no-empty": false,
@@ -10,6 +11,10 @@
     "object-literal-key-quotes": false,
     "object-literal-sort-keys": false,
     "semicolon": [true, "always", "strict-bound-class-methods"],
-    "jsx-no-lambda": false
-  }
+    "jsx-no-lambda": false,
+    "member-ordering": false,
+    "strict-boolean-expressions": true,
+    "no-parameter-reassignment": true
+  },
+  "rulesDirectory": []
 }

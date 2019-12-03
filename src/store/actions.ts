@@ -1,5 +1,5 @@
 import { ActionType } from "../enums/actionType";
-import { State } from "./reducer";
+import { State, Tab } from "./reducer";
 
 export interface ResetStateAction {
   type: ActionType.App_ResetState;
@@ -10,8 +10,12 @@ export interface UpdateStateAction {
   type: ActionType.App_UpdateState;
   payload: Partial<State>;
 }
+export interface AddTabAction {
+  type: ActionType.App_AddTab;
+  payload: Tab;
+}
 
-export type Actions = ResetStateAction | UpdateStateAction;
+export type Actions = ResetStateAction | UpdateStateAction | AddTabAction;
 
 /**
  * reset state
@@ -31,6 +35,17 @@ export function resetStateAction(param?: State): ResetStateAction {
 export function updateStateAction(param: Partial<State>): UpdateStateAction {
   return {
     type: ActionType.App_UpdateState,
+    payload: param
+  };
+}
+
+/**
+ * add tab action
+ * @param param Tab
+ */
+export function addTabAction(param: Tab): AddTabAction {
+  return {
+    type: ActionType.App_AddTab,
     payload: param
   };
 }

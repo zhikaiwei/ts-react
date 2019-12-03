@@ -3,6 +3,11 @@ import { ActionType } from "../enums/actionType";
 import { Actions } from "./actions";
 
 export interface State {}
+export interface Tab {
+  path: string;
+  key: string;
+  title: string;
+}
 
 export const getInitialState: () => State = () => ({});
 

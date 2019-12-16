@@ -4,5 +4,6 @@
 export enum ReducerKey {
   App = "app",
   Router = "router",
-  About = "about"
+  About = "about",
+  Home = "home"
 }

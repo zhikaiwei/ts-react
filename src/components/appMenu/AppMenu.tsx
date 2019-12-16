@@ -3,13 +3,13 @@ import { Dispatch } from "redux";
 import { RouteComponentProps, withRouter } from "react-router";
 import { Icon, Menu } from "antd";
 import { connect } from "react-redux";
+import { ObjectUtils } from "ts-commons";
 import { navigatorPush } from "../../common/navigator";
 import { ReducerKey } from "../../enums/reducerKey";
 import { State, Tab } from "../../store/reducer";
 import { NavBarItem } from "../../interfaces/navBar";
 import styles from "./styles.scss";
 import { navBarMenus } from "./menus";
-import { ObjectUtils } from "ts-commons";
 
 export interface StateToProps {}
 export interface DispatchToProps {}
